@@ -1,12 +1,12 @@
 const express = require('express');
 const path = require('path');
-const favicon = require('server-favicon');
+//const favicon = require('server-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 const index = require('./routes/index');
-const users = require('./routes/users');
+const movie = require('./routes/movie');
 
 //db connection
 const db = require('./helper/db.js')();
@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('users', users);
+app.use('/api/movie', movie);
 
 //catch 404
 app.use((req, res, next) =>{
