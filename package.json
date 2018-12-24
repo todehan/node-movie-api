@@ -1,0 +1,27 @@
+{
+  "name": "movie-api",
+  "version": "1.0.0",
+  "description": "node movie api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/todehan/node-movie-api.git"
+  },
+  "author": "Tolgahan Demirbas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/todehan/node-movie-api/issues"
+  },
+  "homepage": "https://github.com/todehan/node-movie-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  }
+}
