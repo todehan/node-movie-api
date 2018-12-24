@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const index = require('./routes/index');
 const movie = require('./routes/movie');
 
-//db connection
+//database connection
 const db = require('./helper/db.js')();
 
 //view engine setup
