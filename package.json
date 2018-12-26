@@ -1,37 +1,25 @@
 {
-  "name": "movie-api",
-  "version": "1.0.0",
-  "description": "Movie API",
-  "main": "app.js",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "chai-http": "^4.2.0",
-    "chai": "^4.2.0",
-    "cookie-parser": "^1.4.3",
-    "debug": "^4.1.1",
-    "express": "^4.16.4",
-    "jsonwebtoken": "^8.4.0",
-    "jade": "^1.11.0",
-    "morgan": "^1.9.1",
-    "mongoose": "^5.4.0",
-    "nodemon": "^1.18.9",
-    "path": "^0.12.7",
-    "serve-favicon": "^2.5.0"
-  },
-  "devDependencies": {
-    "mocha": "^5.2.0"
-  },
+  "name": "node-egitimi-movie-api",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "mocha"
+    "start": "node ./bin/www",
+    "start:dev": "nodemon ./bin/www",
+    "test": "./node_modules/.bin/mocha --exit --recursive"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/todehan/node-movie-api.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/todehan/node-movie-api/issues"
-  },
-  "homepage": "https://github.com/todehan/node-movie-api#readme"
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.7",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^4.1.0"
+  }
 }
